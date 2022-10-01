@@ -34,11 +34,39 @@ export default function App() {
 					alignItems: 'flex-end',
 					height: '30%',
 				}}>
-				<View style={[styles.box, { height: 20 }, styles.red]}></View>
-				<View style={[styles.box, { height: 40 }, styles.green]}></View>
-				<View style={[styles.box, { height: 70 }, styles.blue]}></View>
-				<View style={[styles.box, { height: 20 }, styles.green]}></View>
-				<View style={[styles.box, { height: 80 }, styles.blue]}></View>
+				<View style={[styles.chart, { height: 20 }, styles.red]} />
+				<View style={[styles.chart, { height: 40 }, styles.green]} />
+				<View style={[styles.chart, { height: 70 }, styles.blue]} />
+				<View style={[styles.chart, { height: 20 }, styles.green]} />
+				<View style={[styles.chart, { height: 100 }, styles.blue]} />
+			</View>
+			{/* POSITIONS */}
+			<View
+				style={{
+					marginTop: 10,
+					borderWidth: 1,
+					flexDirection: 'row',
+					height: 200,
+				}}>
+				<View style={[styles.box, { backgroundColor: 'red' }]} />
+				<View
+					style={[
+						styles.box,
+						{ right: 40, top: 40, backgroundColor: 'green' },
+					]}
+				/>
+				<View
+					style={[
+						styles.box,
+						{
+							position: 'absolute',
+							bottom: 0,
+							right: 0,
+							backgroundColor: 'yellow',
+						},
+					]}
+				/>
+				<View style={[styles.box, { backgroundColor: 'blue' }]} />
 			</View>
 		</SafeAreaView>
 	);
@@ -54,9 +82,13 @@ const styles = StyleSheet.create({
 		justifyContent: 'center',
 	},
 	body: {},
-	box: {
+	chart: {
 		width: 40,
 		// height: 97.6,
+	},
+	box: {
+		width: 80,
+		height: 80,
 	},
 	red: {
 		backgroundColor: 'red',

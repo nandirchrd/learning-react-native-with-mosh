@@ -30,3 +30,6 @@ NOTES
    flex-basis: 100 (Height or Width)
    flex-grow: 1 (Fit-content)
    flex-shrink: 2 (Almost same like grow)
+4. Positions
+   position: 'relative' | 'absolute'
+   top, bottom, right, left 
