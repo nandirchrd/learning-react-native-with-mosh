@@ -7,4 +7,8 @@ Core components & Apis
 - Alert
 
 1. Text
-   numberOfLine
+   numberOfLine = > number
+2. Image
+   source => { require(sourceImg) } or { {uri: sourceUrl, width: number, height: number } }
+   blurRadius => number
+   fadeDuration => number
