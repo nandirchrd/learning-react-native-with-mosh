@@ -23,3 +23,5 @@ Core components & Apis
     {text: "Button2", onPress: () => "Button 2 Pressed" }
    ])
    Alert.prompt("The title", "The Message", callback) ONLY WORKS ON IOS
+6. Stylesheet
+   Stylesheet is for style validation
