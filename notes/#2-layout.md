@@ -14,3 +14,7 @@ NOTES
    }
    Density - Independent Pixels => PhysicalPixels = Dips x ScaleFactor
    Dimensions.get('screen') => { width: 123, height: 234, scale: 2 }
+2. Device Orientation
+   We will use library @react-native-community/hooks
+   useDeviceOrientation => {landscape: true, potrait: false}
+   useDimensions
