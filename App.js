@@ -5,6 +5,7 @@ import {
 	Image,
 	TouchableOpacity,
 	TouchableNativeFeedback,
+	Button,
 } from 'react-native';
 import SpaceX from './app/assets/images/space-x.jpg';
 
@@ -35,6 +36,7 @@ export default function App() {
 					style={styles.img}
 				/>
 			</TouchableOpacity>
+			{/* Touchables */}
 			<TouchableNativeFeedback>
 				<View
 					style={{
@@ -57,6 +59,14 @@ export default function App() {
 					</Text>
 				</View>
 			</TouchableNativeFeedback>
+			{/* Button */}
+			<View style={{ marginTop: 5 }}>
+				<Button
+					color='red'
+					title='This is button'
+					onPress={() => console.log('Button pressed!')}
+				/>
+			</View>
 		</View>
 	);
 }
