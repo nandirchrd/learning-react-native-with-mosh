@@ -5,6 +5,7 @@ Core components & Apis
 - Button
 - Touchables
 - Alert
+- Platform (API)
 
 1. Text
     numberOfLine = > number
@@ -25,3 +26,5 @@ Core components & Apis
    Alert.prompt("The title", "The Message", callback) ONLY WORKS ON IOS
 6. Stylesheet
    Stylesheet is for style validation
+7. Platform & StatusBar
+   Platform.OS === 'android' => paddingTop: StatusBar.currentHeight

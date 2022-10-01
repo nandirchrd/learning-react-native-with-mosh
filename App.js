@@ -7,14 +7,18 @@ import {
 	TouchableNativeFeedback,
 	Button,
 	Alert,
+	Platform,
+	StatusBar,
+	SafeAreaView,
 } from 'react-native';
 import SpaceX from './app/assets/images/space-x.jpg';
 
 const longText =
 	'This is so long text so i just write anything to check the numberOfLine function is working. and I just try to write random things in this variable. heheheheheheheeheheh!';
 export default function App() {
+	console.log(StatusBar.currentHeight);
 	return (
-		<View style={styles.container}>
+		<SafeAreaView style={styles.container}>
 			{/* TEXT */}
 			<Text numberOfLines={2} style={styles.text}>
 				{longText}
@@ -76,7 +80,7 @@ export default function App() {
 					}
 				/>
 			</View>
-		</View>
+		</SafeAreaView>
 	);
 }
 
@@ -84,7 +88,7 @@ const styles = StyleSheet.create({
 	container: {
 		backgroundColor: '#fff',
 		height: '100%',
-		paddingTop: 20,
+		paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
 	},
 	text: {
 		backgroundColor: 'red',
