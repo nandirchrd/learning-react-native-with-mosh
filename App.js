@@ -1,4 +1,11 @@
-import { View, StyleSheet, Text, Image } from 'react-native';
+import {
+	View,
+	StyleSheet,
+	Text,
+	Image,
+	TouchableOpacity,
+	TouchableNativeFeedback,
+} from 'react-native';
 import SpaceX from './app/assets/images/space-x.jpg';
 
 const longText =
@@ -20,12 +27,36 @@ export default function App() {
 				}}>
 				This Is Image
 			</Text>
-			<Image
-				blurRadius={10}
-				fadeDuration={1000}
-				source={SpaceX}
-				style={styles.img}
-			/>
+			<TouchableOpacity>
+				<Image
+					blurRadius={10}
+					fadeDuration={1000}
+					source={SpaceX}
+					style={styles.img}
+				/>
+			</TouchableOpacity>
+			<TouchableNativeFeedback>
+				<View
+					style={{
+						backgroundColor: 'dodgerblue',
+						width: '80%',
+						height: 100,
+						alignSelf: 'center',
+						borderRadius: 10,
+						marginTop: 5,
+						justifyContent: 'center',
+						alignItems: 'center',
+					}}>
+					<Text
+						style={{
+							fontSize: 20,
+							padding: 10,
+							fontWeight: '500',
+						}}>
+						TouchableNativeFeedback
+					</Text>
+				</View>
+			</TouchableNativeFeedback>
 		</View>
 	);
 }

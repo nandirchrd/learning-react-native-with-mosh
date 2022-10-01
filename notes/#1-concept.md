@@ -7,8 +7,11 @@ Core components & Apis
 - Alert
 
 1. Text
-   numberOfLine = > number
+    numberOfLine = > number
 2. Image
-   source => { require(sourceImg) } or { {uri: sourceUrl, width: number, height: number } }
-   blurRadius => number
-   fadeDuration => number
+    source => { require(sourceImg) } or { {uri: sourceUrl, width: number, height: number } }
+    blurRadius => number
+    fadeDuration => number
+3. Touchables 
+    All (TouchableHighlight, TouchableWithoutFeedback, TouchableOpacity)
+    Android (TouchableNativeFeedback)
