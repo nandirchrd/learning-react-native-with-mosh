@@ -6,6 +6,7 @@ import {
 	TouchableOpacity,
 	TouchableNativeFeedback,
 	Button,
+	Alert,
 } from 'react-native';
 import SpaceX from './app/assets/images/space-x.jpg';
 
@@ -64,7 +65,15 @@ export default function App() {
 				<Button
 					color='red'
 					title='This is button'
-					onPress={() => console.log('Button pressed!')}
+					onPress={() =>
+						// Alert.alert('The Title', 'The body', [
+						// 	{ text: 'YES', onPress: () => console.log('YES') },
+						// 	{ text: 'NO', onPress: () => console.log('NO') },
+						// ])
+						Alert.prompt('The title', 'The body', (v) =>
+							console.log(v)
+						)
+					}
 				/>
 			</View>
 		</View>

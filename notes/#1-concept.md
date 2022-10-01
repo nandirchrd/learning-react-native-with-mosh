@@ -17,3 +17,9 @@ Core components & Apis
     Android (TouchableNativeFeedback)
 4. Button
    Color => colors
+5. Alert
+   Alert.alert("The title", "The Body", [
+    {text: "Button1", onPress: () => "Button 1 Pressed" }, 
+    {text: "Button2", onPress: () => "Button 2 Pressed" }
+   ])
+   Alert.prompt("The title", "The Message", callback) ONLY WORKS ON IOS
