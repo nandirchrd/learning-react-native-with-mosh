@@ -3,12 +3,8 @@
     "name": "react-native-expo",
     "slug": "react-native-expo",
     "version": "1.0.0",
-    "orientation": "portrait",
-<<<<<<< HEAD
+    "orientation": "default",
     "icon": "./app/assets/icon.png",
-=======
-    "icon": ".app//assets/icon.png",
->>>>>>> 83c0f61 (fundamental/concept->text)
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./app/assets/splash.png",
