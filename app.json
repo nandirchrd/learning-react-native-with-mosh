@@ -3,7 +3,7 @@
     "name": "react-native-expo",
     "slug": "react-native-expo",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "icon": "./app/assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
@@ -24,7 +24,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./app/assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.nandirchrd.reactnativeexpo"
     },
     "web": {
       "favicon": "./app/assets/favicon.png"
