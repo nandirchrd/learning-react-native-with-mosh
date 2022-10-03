@@ -29,3 +29,16 @@
         - LineHeight: number
    - Icons
         @expo/vector-icons  => <Sozial name='facebook' size:{30} color:'blue' />
+   - FlatformSpesific
+        Platform.select({
+            ios: {
+                stylehere
+            },
+            android: {
+                stylehere
+            }
+        })
+    - CustomButton
+        <TouchablesOpacity styles={{backgroundColor: colors[color]}} onPress={onPress}>
+            <Text> {title} </Text/>
+        </TouchablesOpacity/>
