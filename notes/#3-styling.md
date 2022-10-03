@@ -27,3 +27,5 @@
         - TextTransform: string
         - TextAlign: string
         - LineHeight: number
+   - Icons
+        @expo/vector-icons  => <Sozial name='facebook' size:{30} color:'blue' />

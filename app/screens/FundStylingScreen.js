@@ -3,6 +3,7 @@ import React from 'react';
 import AppBorder from '../courses/fundamentals/styling/AppBorder';
 import AppShadow from '../courses/fundamentals/styling/AppShadow';
 import AppTextStyling from '../courses/fundamentals/styling/AppTextStyling';
+import AppIcon from '../courses/fundamentals/styling/AppIcon';
 
 const FundStylingScreen = () => {
 	return (
@@ -10,6 +11,7 @@ const FundStylingScreen = () => {
 			<AppBorder />
 			<AppShadow />
 			<AppTextStyling />
+			<AppIcon />
 		</View>
 	);
 };
