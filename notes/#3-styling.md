@@ -18,3 +18,12 @@
         - ShadowRadius: number
     (Android)
         - Elevation: number
+   - Text Styling
+        - FontFamily: string
+        - FontStyle: string
+        - FontSize: 20
+        - FontWeight: string
+        - Color: string
+        - TextTransform: string
+        - TextAlign: string
+        - LineHeight: number

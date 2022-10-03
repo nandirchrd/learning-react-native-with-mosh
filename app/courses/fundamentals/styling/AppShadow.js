@@ -10,11 +10,11 @@ const AppShadow = () => {
 					styles.box,
 					{
 						backgroundColor: 'red',
-						shadowColor: 'grey',
-						shadowOffset: { width: 0, height: 10 },
+						shadowColor: 'green',
+						shadowOffset: { width: 0, height: 20 },
 						shadowRadius: 10,
 						shadowOpacity: 1,
-						elevation: 20,
+						elevation: 30,
 					},
 				]}
 			/>

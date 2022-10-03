@@ -2,12 +2,14 @@ import { View, Text, StyleSheet } from 'react-native';
 import React from 'react';
 import AppBorder from '../courses/fundamentals/styling/AppBorder';
 import AppShadow from '../courses/fundamentals/styling/AppShadow';
+import AppTextStyling from '../courses/fundamentals/styling/AppTextStyling';
 
 const FundStylingScreen = () => {
 	return (
 		<View style={styles.container}>
 			<AppBorder />
 			<AppShadow />
+			<AppTextStyling />
 		</View>
 	);
 };
