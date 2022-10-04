@@ -30,6 +30,7 @@ const AppFlatlist = () => {
 	const [data, setData] = useState(initialData);
 	const [refreshing, setRefreshing] = useState(false);
 	const handleDelete = (item) => {
+		console.log(item.name, 'has deleted');
 		setData(() => data.filter((data) => data.id !== item.id));
 	};
 	return (

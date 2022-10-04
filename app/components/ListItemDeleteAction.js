@@ -1,11 +1,18 @@
-import { TouchableWithoutFeedback } from 'react-native';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { TouchableOpacity, TouchableWithoutFeedback } from 'react-native';
+import Icon from './Icon';
 
 const ListItemDeleteAction = ({ onPress }) => {
 	return (
-		<TouchableWithoutFeedback onPress={onPress}>
-			<MaterialCommunityIcons name='trash-can' size={20} color='white' />
-		</TouchableWithoutFeedback>
+		<TouchableOpacity
+			onPress={onPress}
+			style={{
+				justifyContent: 'center',
+				alignItems: 'center',
+				padding: 5,
+				backgroundColor: 'red',
+			}}>
+			<Icon name='trash-can' backgroundColor='red' />
+		</TouchableOpacity>
 	);
 };
 

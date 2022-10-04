@@ -21,17 +21,7 @@ const ListItem = ({ item, onPress, renderRightAction }) => {
 					<Text>Age: {item.age}</Text>
 				</View>
 			</TouchableNativeFeedback>
-			{renderRightAction && (
-				<View
-					style={{
-						backgroundColor: 'red',
-						justifyContent: 'center',
-						alignItems: 'center',
-						padding: 10,
-					}}>
-					{renderRightAction}
-				</View>
-			)}
+			{renderRightAction && renderRightAction}
 		</View>
 	);
 };
