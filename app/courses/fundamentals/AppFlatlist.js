@@ -1,5 +1,6 @@
 import { View, FlatList, Text } from 'react-native';
 import React from 'react';
+import ListItem from '../../components/ListItem';
 
 const data = [
 	{
@@ -33,12 +34,7 @@ const AppFlatlist = () => {
 				ItemSeparatorComponent={() => (
 					<View style={{ height: 1, backgroundColor: '#000' }} />
 				)}
-				renderItem={({ item }) => (
-					<View style={{ padding: 10 }}>
-						<Text>Name: {item.name}</Text>
-						<Text>Age: {item.age}</Text>
-					</View>
-				)}
+				renderItem={({ item }) => <ListItem item={item} />}
 			/>
 		</View>
 	);
