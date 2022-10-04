@@ -1,8 +1,9 @@
 import { View, FlatList, Text } from 'react-native';
-import React from 'react';
+import React, { useState } from 'react';
 import ListItem from '../../components/ListItem';
+import ListItemDeleteAction from '../../components/ListItemDeleteAction';
 
-const data = [
+const initialData = [
 	{
 		id: 1,
 		name: 'Nandi',
@@ -26,6 +27,10 @@ const data = [
 ];
 
 const AppFlatlist = () => {
+	const [data, setData] = useState(initialData);
+	const handleDelete = (item) => {
+		setData(() => data.filter((data) => data.id !== item.id));
+	};
 	return (
 		<View>
 			<FlatList
@@ -40,7 +45,15 @@ const AppFlatlist = () => {
 					/>
 				)}
 				renderItem={({ item }) => (
-					<ListItem onPress={() => console.log(item)} item={item} />
+					<ListItem
+						onPress={() => console.log(item)}
+						item={item}
+						renderRightAction={
+							<ListItemDeleteAction
+								onPress={() => handleDelete(item)}
+							/>
+						}
+					/>
 				)}
 			/>
 		</View>
