@@ -3,6 +3,7 @@ import FundConceptScreen from './app/screens/FundConceptScreen';
 import FundLayoutsScreen from './app/screens/FundLayoutsScreen';
 import FundStylingScreen from './app/screens/FundStylingScreen';
 import FundListsScreen from './app/screens/FundListsScreen';
+import FundInputScreen from './app/screens/FundInputScreen';
 
 export default function App() {
 	return (
@@ -12,6 +13,7 @@ export default function App() {
 				<FundLayoutsScreen />
 				<FundStylingScreen />
 				<FundListsScreen />
+				<FundInputScreen />
 			</ScrollView>
 		</SafeAreaView>
 	);
