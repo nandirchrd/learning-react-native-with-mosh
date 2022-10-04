@@ -10,6 +10,7 @@ const AppIcon = () => {
 					fontSize: 25,
 					textAlign: 'center',
 					fontWeight: 'bold',
+					marginTop: 20,
 				}}>
 				ICONS
 			</Text>

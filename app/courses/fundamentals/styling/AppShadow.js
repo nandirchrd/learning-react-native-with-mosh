@@ -3,13 +3,18 @@ import React from 'react';
 
 const AppShadow = () => {
 	return (
-		<View>
+		<View
+			style={{
+				width: '90%',
+				alignSelf: 'center',
+				alignItems: 'center',
+			}}>
 			<Text style={styles.title}>Shadow</Text>
 			<View
 				style={[
 					styles.box,
 					{
-						backgroundColor: 'red',
+						backgroundColor: 'royalblue',
 						shadowColor: 'green',
 						shadowOffset: { width: 0, height: 20 },
 						shadowRadius: 10,

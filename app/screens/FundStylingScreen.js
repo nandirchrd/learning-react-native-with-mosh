@@ -7,7 +7,10 @@ import AppIcon from '../courses/fundamentals/styling/AppIcon';
 
 const FundStylingScreen = () => {
 	return (
-		<View style={styles.container}>
+		<View>
+			<Text style={[styles.title, { marginTop: 5 }]}>
+				FUNDAMENTALS STYLING
+			</Text>
 			<AppBorder />
 			<AppShadow />
 			<AppTextStyling />
@@ -17,9 +20,12 @@ const FundStylingScreen = () => {
 };
 
 const styles = StyleSheet.create({
-	container: {
-		width: '90%',
-		alignSelf: 'center',
+	title: {
+		fontSize: 25,
+		borderTopWidth: 1,
+		borderBottomWidth: 1,
+		textAlign: 'center',
+		fontWeight: 'bold',
 	},
 });
 export default FundStylingScreen;
