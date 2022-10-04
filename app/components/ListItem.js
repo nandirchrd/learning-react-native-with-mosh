@@ -1,12 +1,20 @@
-import { View, Text } from 'react-native';
+import {
+	View,
+	Text,
+	TouchableHighlight,
+	TouchableOpacity,
+	TouchableNativeFeedback,
+} from 'react-native';
 import React from 'react';
 
-const ListItem = ({ item }) => {
+const ListItem = ({ item, onPress }) => {
 	return (
-		<View style={{ padding: 10 }}>
-			<Text>Name: {item.name}</Text>
-			<Text>Age: {item.age}</Text>
-		</View>
+		<TouchableNativeFeedback onPress={onPress}>
+			<View style={{ backgroundColor: 'royalblue', padding: 10 }}>
+				<Text>Name: {item.name}</Text>
+				<Text>Age: {item.age}</Text>
+			</View>
+		</TouchableNativeFeedback>
 	);
 };
 

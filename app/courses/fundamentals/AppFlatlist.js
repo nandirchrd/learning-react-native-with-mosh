@@ -32,9 +32,16 @@ const AppFlatlist = () => {
 				data={data}
 				keyExtractor={(data) => data.id.toString()}
 				ItemSeparatorComponent={() => (
-					<View style={{ height: 1, backgroundColor: '#000' }} />
+					<View
+						style={{
+							height: 1,
+							backgroundColor: '#000',
+						}}
+					/>
 				)}
-				renderItem={({ item }) => <ListItem item={item} />}
+				renderItem={({ item }) => (
+					<ListItem onPress={() => console.log(item)} item={item} />
+				)}
 			/>
 		</View>
 	);
