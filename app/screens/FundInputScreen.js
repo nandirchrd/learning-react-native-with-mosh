@@ -2,6 +2,7 @@ import { View, Text } from 'react-native';
 import React from 'react';
 import AppInput from '../couses/fundamentals/inputs/AppInput';
 import PrettyInput from '../couses/fundamentals/inputs/PrettyInput';
+import AppSwitch from '../couses/fundamentals/inputs/AppSwitch';
 
 const FundInputScreen = () => {
 	return (
@@ -38,6 +39,7 @@ const FundInputScreen = () => {
 				onChangeText={(text) => console.log(text)}
 				placeholder='Masukan nama anda'
 			/>
+			<AppSwitch />
 		</View>
 	);
 };
