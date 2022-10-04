@@ -1,7 +1,7 @@
 import { View, FlatList, Text } from 'react-native';
 import React, { useState } from 'react';
-import ListItem from '../../components/ListItem';
-import ListItemDeleteAction from '../../components/ListItemDeleteAction';
+import ListItem from '../../../components/ListItem';
+import ListItemDeleteAction from '../../../components/ListItemDeleteAction';
 
 const initialData = [
 	{
