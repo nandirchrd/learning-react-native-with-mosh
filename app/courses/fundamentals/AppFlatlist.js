@@ -28,6 +28,7 @@ const initialData = [
 
 const AppFlatlist = () => {
 	const [data, setData] = useState(initialData);
+	const [refreshing, setRefreshing] = useState(false);
 	const handleDelete = (item) => {
 		setData(() => data.filter((data) => data.id !== item.id));
 	};
@@ -55,6 +56,10 @@ const AppFlatlist = () => {
 						}
 					/>
 				)}
+				refreshing={refreshing}
+				onRefresh={() =>
+					setData([{ id: 2, name: 'Wesi yo wesi', age: 20 }])
+				}
 			/>
 		</View>
 	);
