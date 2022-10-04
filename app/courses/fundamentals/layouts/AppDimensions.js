@@ -8,6 +8,7 @@ import React from 'react';
 const AppDimensions = () => {
 	const dimensions = useDimensions();
 	const orientation = useDeviceOrientation();
+
 	return (
 		<View style={styles.container}>
 			<Text
