@@ -3,17 +3,23 @@ import React from 'react';
 
 const AppBorder = () => {
 	return (
-		<View style={{ marginTop: 5 }}>
+		<View style={{ marginTop: 5, width: '90%', alignSelf: 'center' }}>
 			<Text
 				style={{
 					fontWeight: 'bold',
 					textAlign: 'center',
-					padding: 10,
+					padding: 5,
 					fontSize: 20,
 				}}>
 				BORDER
 			</Text>
-			<View style={{ flexDirection: 'row', flexWrap: 'wrap' }}>
+			<View
+				style={{
+					flexDirection: 'row',
+					flexWrap: 'wrap',
+					backgroundColor: 'royalblue',
+					padding: 10,
+				}}>
 				<View style={[styles.box, { borderWidth: 2 }]}>
 					<Text style={{ fontWeight: 'bold' }}>BorderWidth: 2</Text>
 				</View>
@@ -38,7 +44,12 @@ const AppBorder = () => {
 				</View>
 			</View>
 			{/* BORDER WIDTH */}
-			<Text style={{ textAlign: 'center', fontWeight: 'bold' }}>
+			<Text
+				style={{
+					textAlign: 'center',
+					fontWeight: 'bold',
+					fontSize: 20,
+				}}>
 				Border Width
 			</Text>
 			<View
@@ -46,13 +57,15 @@ const AppBorder = () => {
 					flexDirection: 'row',
 					marginTop: 5,
 					flexWrap: 'wrap',
+					backgroundColor: 'royalblue',
+					padding: 10,
 				}}>
 				<View
 					style={[
 						styles.box,
 						{
 							borderTopWidth: 2,
-							backgroundColor: 'gray',
+							backgroundColor: '#041050',
 						},
 					]}>
 					<Text style={{ fontWeight: 'bold', color: 'white' }}>
@@ -64,7 +77,7 @@ const AppBorder = () => {
 						styles.box,
 						{
 							borderLeftWidth: 3,
-							backgroundColor: 'gray',
+							backgroundColor: '#041050',
 							marginLeft: 2,
 						},
 					]}>
@@ -77,7 +90,7 @@ const AppBorder = () => {
 						styles.box,
 						{
 							borderBottomWidth: 3,
-							backgroundColor: 'gray',
+							backgroundColor: '#041050',
 							marginTop: 2,
 						},
 					]}>
@@ -90,7 +103,7 @@ const AppBorder = () => {
 						styles.box,
 						{
 							borderRightWidth: 3,
-							backgroundColor: 'gray',
+							backgroundColor: '#041050',
 							marginTop: 2,
 							marginLeft: 2,
 						},
@@ -101,7 +114,12 @@ const AppBorder = () => {
 				</View>
 			</View>
 			{/* BORDER RADIUS */}
-			<Text style={{ textAlign: 'center', fontWeight: 'bold' }}>
+			<Text
+				style={{
+					textAlign: 'center',
+					fontWeight: 'bold',
+					fontSize: 20,
+				}}>
 				Border Radius
 			</Text>
 			<View
@@ -109,13 +127,15 @@ const AppBorder = () => {
 					flexDirection: 'row',
 					marginTop: 5,
 					flexWrap: 'wrap',
+					backgroundColor: 'royalblue',
+					padding: 10,
 				}}>
 				<View
 					style={[
 						styles.box,
 						{
 							borderWidth: 3,
-							backgroundColor: 'gray',
+							backgroundColor: '#041050',
 							borderTopLeftRadius: 10,
 						},
 					]}>
@@ -128,7 +148,7 @@ const AppBorder = () => {
 						styles.box,
 						{
 							borderWidth: 3,
-							backgroundColor: 'gray',
+							backgroundColor: '#041050',
 							marginTop: 2,
 							borderTopRightRadius: 10,
 						},
@@ -142,7 +162,7 @@ const AppBorder = () => {
 						styles.box,
 						{
 							borderWidth: 3,
-							backgroundColor: 'gray',
+							backgroundColor: '#041050',
 							marginTop: 2,
 							borderBottomLeftRadius: 10,
 						},
@@ -156,7 +176,7 @@ const AppBorder = () => {
 						styles.box,
 						{
 							borderWidth: 3,
-							backgroundColor: 'gray',
+							backgroundColor: '#041050',
 							marginTop: 2,
 							marginLeft: 2,
 							borderBottomRightRadius: 10,
